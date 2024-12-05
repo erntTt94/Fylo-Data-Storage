@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+</head>
+
+<body>
+  <div class="con">
+    <article class="first-box">
+      <img src="images/logo.svg" alt="logo">
+      <div class="storage">
+        <img src="images/icon-document.svg" alt="document storage">
+        <img src="images/icon-folder.svg" alt="folder storage">
+        <img src="images/icon-upload.svg" alt="cloud storage">
+      </div>
+    </article>
+    <article class="second-box">
+      <div class="popup">
+        <h1>185 <span>GB LEFT</span></h1>
+      </div>
+      <div class="triangle"></div>
+      <p>You’ve used <span>815 GB</span> of your storage</p>
+      <div class="slidecontainer">
+        <input type="range" min="0" max="1000" value="815" class="slider" id="rangeSlider">
+      </div>
+      <div class="gb">
+        <p>0 GB</p>
+        <p>1000 GB</p>
+      </div>
+    </article>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">E.E.</a>.
+  </div> -->
+  <script src="app.js"></script>
+</body>
+
+</html>
