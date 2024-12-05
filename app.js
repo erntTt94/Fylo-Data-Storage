@@ -9,7 +9,7 @@ slider.style.background = `linear-gradient(to right, #25a18e 0%, #e63946 ${(valu
 
 slider.addEventListener('input', function () {
     this.style.background = `linear-gradient(to right, #25a18e 0%, #e63946 ${(this.value - this.min) / (this.max - this.min) * 100}%, #DEE2E6 ${(this.value - this.min) / (this.max - this.min) * 100}%, rgba(53, 92, 125, 1) 100%)`
-    showData.innerHTML = `${1000 - this.value}<span>GB LEFT</span>`;
+    showData.innerHTML = `${1000 - this.value} <span>GB LEFT</span>`;
     usedData.textContent = `${slider.value} GB`;
 });
 
